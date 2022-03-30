@@ -1,0 +1,1 @@
+CREATE TABLE order_reviews (id BIGSERIAL PRIMARY KEY, comment VARCHAR(1500), rate VARCHAR(100),  review_date date DEFAULT CURRENT_DATE, order_id bigint REFERENCES orders(id) ON UPDATE CASCADE ON DELETE CASCADE); 
